@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitFox</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <h1>
+        F i t<mark id="logo"> F o x </mark>
+        <h4>F i t n e s s&nbsp; C e n t a r&nbsp; F o x</h4>
+    </h1>
+    <div id="naslov">
+        <ul id="bar">
+            <li class="lin"><a href="pocetka.html" class="link">Vesti</a></li>
+            <li class="lin"><a href="termini.html" class="link">Termini grupnih treninga</a></li>
+            <li class="lin"><a href="onama.html" class="link">O nama</a></li>
+            <li class="lin"><a href="prijava.html" class="link">Prijava</a></li>
+        </ul>
+    </div>
+    <div id="pozadina" style="height: 800px;">
+        <br><br>
+        <fieldset class="prijava1">
+            <legend class="prijava">Probni trening</legend>
+            <form onsubmit="provera();" name="formaa">
+            <br>Unesite Vase ime: <input type="text" name="ime">
+            <br><br>Unesite Vase prezime: <input type="text" name="prezime">
+            <br><br>Unesite Vas datum rodjenja: <input type="date" name="rodj" value="2003-01-23">
+            <br><br>Unesite Vasu e-mail aredsu: <input type="email" id="email" name="mail">
+            <br><br>Unesite Vas kontakt telefon: <input type="tel" id="b" class="telefon" name="brojj">
+            <br><br><fieldset class="pol">
+                <legend>Vas pol:</legend>
+                <input type="radio" name="pol">Musko
+                <input type="radio" name="pol">Zensko
+            </fieldset>
+            <br><br><input type="submit" class="dugme1" name="Posalji prijavu" value="Posalji prijavu">
+            </form>
+        </fieldset>
+        <fieldset class="prijava">
+            <legend class="prijava">Prijava za personalni</legend>
+            <form>
+            <br>Unesite Vase ime: <input type="text" name="ime">
+            <br><br>Unesite Vase prezime: <input type="text" name="prezime">
+            <br><br>Unesite Vas datum rodjenja: <input type="date" name="rodj" value="2003-01-23">
+            <br><br>Unesite Vasu e-mail aredsu: <input type="email" name="mail">
+            <br><br>Unesite Vas kontakt telefon: <input type="tel" name="broj">
+            <br><br><fieldset class="pol">
+                <legend>Vas pol:</legend>
+                <input type="radio" name="pol">Musko
+                <input type="radio" name="pol">Zensko
+            </fieldset>
+            <br><br>Unesite Vasu visinu: <input type="number" name="visina" min="100" max="250">
+            <br><br>Unesite Vasu kilazu: <input type="number" name="kilaza" min="0">
+            <br><br>Status aktivnosti: <select>
+                <option name="aktivnost" selected>----------------------</option>
+                <option name="aktivnost">Neaktivan</option>
+                <option name="aktivnost">Slabo aktivan</option>
+                <option name="aktivnost">Umereno aktivan</option>
+                <option name="aktivnost">Veoma aktivan</option>
+            </select>
+            <br><br><input type="submit" class="dugme" name="Posalji prijavu" value="Posalji prijavu">
+            </form>
+        </fieldset>
+    </div>
+</body>
+</html>
